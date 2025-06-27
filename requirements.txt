@@ -1,6 +1,6 @@
 fastapi==0.110.2
 uvicorn[standard]==0.29.0
-whisper @ git+https://github.com/openai/whisper.git
+openai-whisper==20231111
 numpy>=1.23.0
 python-multipart>=0.0.7
 ffmpeg-python>=0.2.0
