@@ -1,0 +1,15 @@
+# Render Blueprint for EchoCut Pro backend
+services:
+  - type: web
+    name: echocut-pro
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    dockerContext: .
+    autoDeploy: true
+    envVars:
+      - key: WHISPER_MODEL
+        value: tiny
+      - key: BRAND_LOGO_URL
+        value: https://yourcdn.com/logo.png  # optional
+    healthCheckPath: /docs
